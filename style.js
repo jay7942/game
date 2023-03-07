@@ -1,20 +1,20 @@
 // Define variables
-var answer = Math.floor(Math.random() * 100) + 1;
-var chances = 5;
-var guesses = [];
+let answer = Math.floor(Math.random() * 100) + 1;
+let chances = 5;
+let guesses = [];
 
 // Get HTML elements
-var guessInput = document.getElementById("guess");
-var resultText = document.getElementById("result");
-var chancesText = document.getElementById("chances");
-var resetButton = document.querySelector("button[type=reset]");
+let guessInput = document.getElementById("guess");
+let resultText = document.getElementById("result");
+let chancesText = document.getElementById("chances");
+let resetButton = document.querySelector("button[type=reset]");
 
 // Initialize game state
 chancesText.textContent = chances;
 
 // Check if guess is valid and update game state
 function checkGuess() {
-  var guess = parseInt(guessInput.value);
+  let guess = parseInt(guessInput.value);
 
   if (guess < 1 || guess > 100) {
     resultText.textContent = "Please enter a number between 1 and 100.";
