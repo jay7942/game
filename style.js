@@ -17,12 +17,12 @@ function checkGuess() {
   let guess = parseInt(guessInput.value);
 
   if (guess < 1 || guess > 100) {
-    resultText.textContent = "Please enter a number between 1 and 100.";
+    resultText.textContent = "1~100까지의 숫자 하나를 입력하세요.";
     return;
   }
 
   if (guesses.includes(guess)) {
-    resultText.textContent = "You already guessed that number!";
+    resultText.textContent = "이미 사용된 숫자 입니다.";
     return;
   }
 
