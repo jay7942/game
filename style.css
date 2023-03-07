@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+root {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   font-family: 'Single Day', sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 2rem;
+}
+
+#game {
+   margin-top: 10px;
+}
+
+#result {
+   font-weight: bold;
+   margin-top: 5px;
+   color: purple;
+}
+
+input {
+   width: 250px;
+   height: 20px;
+   font-size: 2rem;
+   font-family: 'Single Day', sans-serif;
+   color: blue;
+   padding: 10px;
+   border-radius: 5px solid #ccc;
+}
+
+button {
+   margin-top: 10px;
+   padding: 10px 15px;
+   border: none;
+   border-radius: 5px;
+   background-color: #4CAF50;
+   color: white;
+   font-size: 1.5rem;
+   cursor: pointer;
+}
+
+button:disabled {
+   background-color: #ccc;
+   cursor: not-allowed;
+}
